@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice Areas | The Dollard Firm</title>
+  <meta name="description" content="Explore the criminal and civil defense practice areas of The Dollard Firm in Noblesville, IN. Experienced legal representation you can trust.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .accordion-content { display: none; }
+  </style>
+  <script>
+    function toggleAccordion(id) {
+      const content = document.getElementById(id);
+      content.classList.toggle('hidden');
+    }
+  </script>
+  <link rel="icon" href="logo.png" type="image/png">
+  <link rel="apple-touch-icon" sizes="180x180" href="logo.png">
+</head>
+<body class="bg-[#0a0a0a] text-gray-100" style="font-family: 'Baskerville', serif;">
+
+<!-- Header -->
+<header class="flex justify-between items-center p-6 border-b border-[#E6C47B] shadow-lg sticky top-0 z-50 bg-black">
+  <a href="index.html" class="flex items-center">
+    <img src="logo-gold.png" alt="The Dollard Firm Logo" class="h-12 w-auto">
+  </a>
+  <nav class="hidden md:flex gap-6 text-gray-100 font-medium tracking-wide">
+    <a href="index.html" class="hover:text-[#E6C47B] transition-colors">Home</a>
+    <a href="practice.html" class="text-[#E6C47B] font-semibold">Practice Areas</a>
+    <a href="why-us.html" class="hover:text-[#E6C47B] transition-colors">Why Us</a>
+    <a href="about.html" class="hover:text-[#E6C47B] transition-colors">About</a>
+    <a href="contact.html" class="hover:text-[#E6C47B] transition-colors">Contact</a>
+  </nav>
+  <div class="ml-4">
+    <img src="logo.png" alt="Dollard Firm Logo" class="h-14 w-auto">
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section class="py-20 px-8 lg:px-32 bg-gradient-to-b from-[#0a0a0a] to-[#1a1a1a] text-center">
+  <h2 class="text-5xl font-extrabold text-[#E6C47B] mb-6">Practice Areas</h2>
+  <p class="text-lg text-gray-300 max-w-3xl mx-auto">
+    The Dollard Firm proudly serves clients throughout Indiana in criminal defense, civil litigation, family, and estate law. 
+    Select a category below to learn more about each area of practice and how our firm can help protect your rights.
+  </p>
+</section>
+
+<!-- Accent Divider -->
+<div class="border-t-2 border-[#E6C47B] w-24 mx-auto -mt-4 mb-12"></div>
+
+<!-- Accordion Section -->
+<section class="px-8 lg:px-32 space-y-6">
+
+  <!-- Criminal Law -->
+  <div class="bg-[#111111] rounded-xl border border-[#E6C47B] shadow-lg overflow-hidden">
+    <button onclick="toggleAccordion('criminalContent')" class="w-full text-left px-6 py-4 font-bold text-[#E6C47B] text-xl focus:outline-none hover:bg-[#1f1f1f] transition">
+      Criminal Law
+    </button>
+    <div id="criminalContent" class="accordion-content hidden bg-[#0a0a0a] p-6 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <a href="criminal-law.html" class="block bg-[#111111] border border-[#E6C47B] rounded-xl p-6 shadow-md hover:bg-[#1f1f1f] transition">
+        <h3 class="text-xl font-semibold text-[#E6C47B] mb-2">Criminal Law</h3>
+      </a>
+      <a href="criminal-expungement.html" class="block bg-[#111111] border border-[#E6C47B] rounded-xl p-6 shadow-md hover:bg-[#1f1f1f] transition">
+        <h3 class="text-xl font-semibold text-[#E6C47B] mb-2">Criminal Expungement</h3>
+      </a>
+      <a href="sentence-modifications.html" class="block bg-[#111111] border border-[#E6C47B] rounded-xl p-6 shadow-md hover:bg-[#1f1f1f] transition">
+        <h3 class="text-xl font-semibold text-[#E6C47B] mb-2">Sentence Modifications</h3>
+      </a>
+      <a href="owi.html" class="block bg-[#111111] border border-[#E6C47B] rounded-xl p-6 shadow-md hover:bg-[#1f1f1f] transition">
+        <h3 class="text-xl font-semibold text-[#E6C47B] mb-2">OWI</h3>
+      </a>
+      <a href="probation-violations.html" class="block bg-[#111111] border border-[#E6C47B] rounded-xl p-6 shadow-md hover:bg-[#1f1f1f] transition">
+        <h3 class="text-xl font-semibold text-[#E6C47B] mb-2">Probation Violations</h3>
+      </a>
+      <a href="drug-offense.html" class="block bg-[#111111] border border-[#E6C47B] rounded-xl p-6 shadow-md hover:bg-[#1f1f1f] transition">
+        <h3 class="text-xl font-semibold text-[#E6C47B] mb-2">Drug Offense</h3>
+      </a>
+      <a href="felony.html" class="block bg-[#111111] border border-[#E6C47B] rounded-xl p-6 shadow-md hover:bg-[#1f1f1f] transition">
+        <h3 class="text-xl font-semibold text-[#E6C47B] mb-2">Felony</h3>
+      </a>
+      <a href="misdemeanor.html" class="block bg-[#111111] border border-[#E6C47B] rounded-xl p-6 shadow-md hover:bg-[#1f1f1f] transition">
+        <h3 class="text-xl font-semibold text-[#E6C47B] mb-2">Misdemeanor</h3>
+      </a>
+      <a href="federal-court.html" class="block bg-[#111111] border border-[#E6C47B] rounded-xl p-6 shadow-md hover:bg-[#1f1f1f] transition">
+        <h3 class="text-xl font-semibold text-[#E6C47B] mb-2">Federal Court Practice</h3>
+      </a>
+      <a href="juvenile.html" class="block bg-[#111111] border border-[#E6C47B] rounded-xl p-6 shadow-md hover:bg-[#1f1f1f] transition">
+        <h3 class="text-xl font-semibold text-[#E6C47B] mb-2">Juvenile Law</h3>
+      </a>
+    </div>
+  </div>
+
+  <!-- Civil Law -->
+  <div class="bg-[#111111] rounded-xl border border-[#E6C47B] shadow-lg overflow-hidden">
+    <button onclick="toggleAccordion('civilContent')" class="w-full text-left px-6 py-4 font-bold text-[#E6C47B] text-xl focus:outline-none hover:bg-[#1f1f1f] transition">
+      Civil Law
+    </button>
+    <div id="civilContent" class="accordion-content hidden bg-[#0a0a0a] p-6 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <a href="civil-law.html" class="block bg-[#111111] border border-[#E6C47B] rounded-xl p-6 hover:bg-[#1f1f1f] transition">
+        <h3 class="text-xl font-semibold text-[#E6C47B] mb-2">Civil Law</h3>
+      </a>
+      <a href="small-claims.html" class="block bg-[#111111] border border-[#E6C47B] rounded-xl p-6 hover:bg-[#1f1f1f] transition">
+        <h3 class="text-xl font-semibold text-[#E6C47B] mb-2">Small Claims</h3>
+      </a>
+      <a href="property-dispute.html" class="block bg-[#111111] border border-[#E6C47B] rounded-xl p-6 hover:bg-[#1f1f1f] transition">
+        <h3 class="text-xl font-semibold text-[#E6C47B] mb-2">Property Dispute</h3>
+      </a>
+      <a href="contract-disputes.html" class="block bg-[#111111] border border-[#E6C47B] rounded-xl p-6 hover:bg-[#1f1f1f] transition">
+        <h3 class="text-xl font-semibold text-[#E6C47B] mb-2">Contract Disputes</h3>
+      </a>
+      <a href="false-arrest.html" class="block bg-[#111111] border border-[#E6C47B] rounded-xl p-6 hover:bg-[#1f1f1f] transition">
+        <h3 class="text-xl font-semibold text-[#E6C47B] mb-2">False Arrest</h3>
+      </a>
+      <a href="malicious-prosecution.html" class="block bg-[#111111] border border-[#E6C47B] rounded-xl p-6 hover:bg-[#1f1f1f] transition">
+        <h3 class="text-xl font-semibold text-[#E6C47B] mb-2">Malicious Prosecution</h3>
+      </a>
+      <a href="personal-injury.html" class="block bg-[#111111] border border-[#E6C47B] rounded-xl p-6 hover:bg-[#1f1f1f] transition">
+        <h3 class="text-xl font-semibold text-[#E6C47B] mb-2">Personal Injury</h3>
+      </a>
+    </div>
+  </div>
+
+  <!-- Estate Law -->
+  <div class="bg-[#111111] rounded-xl border border-[#E6C47B] shadow-lg overflow-hidden">
+    <button onclick="toggleAccordion('estateContent')" class="w-full text-left px-6 py-4 font-bold text-[#E6C47B] text-xl focus:outline-none hover:bg-[#1f1f1f] transition">
+      Estate Law
+    </button>
+    <div id="estateContent" class="accordion-content hidden bg-[#0a0a0a] p-6 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <a href="wills.html" class="block bg-[#111111] border border-[#E6C47B] rounded-xl p-6 hover:bg-[#1f1f1f] transition">
+        <h3 class="text-xl font-semibold text-[#E6C47B] mb-2">Wills</h3>
+      </a>
+	<a href="estates.html" class="block bg-[#111111] border border-[#E6C47B] rounded-xl p-6 hover:bg-[#1f1f1f] transition">
+        <h3 class="text-xl font-semibold text-[#E6C47B] mb-2">Estates</h3>
+      </a>
+	<a href="trusts.html" class="block bg-[#111111] border border-[#E6C47B] rounded-xl p-6 hover:bg-[#1f1f1f] transition">
+        <h3 class="text-xl font-semibold text-[#E6C47B] mb-2">Trusts</h3>
+      </a>
+      <a href="power-of-attorney.html" class="block bg-[#111111] border border-[#E6C47B] rounded-xl p-6 hover:bg-[#1f1f1f] transition">
+        <h3 class="text-xl font-semibold text-[#E6C47B] mb-2">Power of Attorney Law</h3>
+      </a>
+    </div>
+  </div>
+
+<!-- Family Law -->
+<div class="bg-[#111111] rounded-xl border border-[#E6C47B] shadow-lg overflow-hidden">
+    <button onclick="toggleAccordion('familyContent')" class="w-full text-left px-6 py-4 font-bold text-[#E6C47B] text-xl focus:outline-none hover:bg-[#1f1f1f] transition">
+      Family Law
+    </button>
+    <div id="familyContent" class="accordion-content hidden bg-[#0a0a0a] p-6 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <a href="family-law.html" class="block bg-[#111111] border border-[#E6C47B] rounded-xl p-6 hover:bg-[#1f1f1f] transition">
+        <h3 class="text-xl font-semibold text-[#E6C47B] mb-2">Family Law</h3>
+      </a>
+    </div>
+  </div>
+
+
+
+</section>
+
+<!-- CTA Banner -->
+<section class="bg-[#E6C47B] text-[#0a0a0a] py-12 px-8 lg:px-32 text-center mt-12 shadow-lg">
+  <h3 class="text-2xl font-bold mb-4">Charged with a Crime or Need Legal Assistance?</h3>
+  <p class="max-w-2xl mx-auto mb-6">Contact The Dollard Firm today to schedule a confidential consultation and get experienced guidance in any legal matter.</p>
+  <a href="contact.html" class="bg-[#0a0a0a] text-[#E6C47B] font-semibold px-8 py-3 rounded-lg shadow-md hover:bg-[#1a1a1a] transition">Schedule a Consultation</a>
+</section>
+
+<!-- Footer -->
+<footer class="bg-[#0a0a0a] text-gray-300 p-8 mt-16 border-t border-[#E6C47B]">
+  <p class="mb-4">&copy; 2025 The Dollard Firm | Noblesville, IN</p>
+  <div class="flex justify-center gap-6">
+    <a href="https://www.facebook.com/people/The-Dollard-Firm/61573920722323/#" class="hover:text-[#E6C47B]">Facebook</a>
+    <a href="mailto:info@dollardfirm.com" class="hover:text-[#E6C47B]">Email</a>
+    <a href="tel:3177707070" class="hover:text-[#E6C47B]">Phone</a>
+  </div>
+</footer>
+
+</body>
+</html>
