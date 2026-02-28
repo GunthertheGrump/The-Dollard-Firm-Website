@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Expungement & License Reinstatement | The Dollard Firm</title>
-  <meta name="description" content="Clear your record and regain your license with The Dollard Firm in Noblesville, Indiana. Experienced expungement and reinstatement attorneys helping clients move forward.">
-  <meta name="keywords" content="expungement Indiana, license reinstatement, criminal record sealing, background check removal, The Dollard Firm, Noblesville attorney, Indiana expungement lawyer, clear record, second chance law, BMV reinstatement, driver’s license suspension, Indiana criminal defense">
-  <script src="https://cdn.tailwindcss.com"></script>
-  
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Expungement & License Reinstatement | The Dollard Firm</title>
+<meta name="description" content="Clear your record and regain your license with The Dollard Firm in Noblesville, Indiana. Experienced expungement and reinstatement attorneys helping clients move forward.">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="icon" href="logo.png" type="image/png">
+<link rel="apple-touch-icon" sizes="180x180" href="logo.png">
+<style>
+  body { font-family: 'Baskerville', serif; }
+</style>
 </head>
-<body class="bg-[#0a0a0a] text-gray-100" style="font-family: 'Baskerville', serif;">
+<body class="bg-[#0a0a0a] text-gray-100">
 
 <!-- Header -->
 <header class="flex justify-between items-center p-6 border-b border-[#E6C47B] shadow-lg sticky top-0 z-50 bg-black">
-  <div class="flex items-center gap-3">
-    <img src="logo-gold.png" alt="The Dollard Firm Gold Logo" class="h-14 w-auto">
-  </div>
+  <a href="index.html" class="flex items-center">
+    <img src="logo-gold.png" alt="The Dollard Firm Logo" class="h-12 w-auto">
+  </a>
   <nav class="hidden md:flex gap-6 text-gray-100 font-medium tracking-wide">
     <a href="index.html" class="hover:text-[#E6C47B] transition-colors">Home</a>
     <a href="practice.html" class="hover:text-[#E6C47B] transition-colors">Practice Areas</a>
@@ -26,28 +29,50 @@
   <div class="ml-4">
     <img src="logo.png" alt="The Dollard Firm Logo" class="h-14 w-auto">
   </div>
+  <button id="mobile-menu-button" class="md:hidden text-[#E6C47B] text-3xl focus:outline-none transition-transform duration-300" aria-label="Toggle navigation menu">☰</button>
 </header>
 
+  <!-- Mobile Menu Button -->
+  <button id="mobile-menu-button" class="md:hidden text-[#E6C47B] text-3xl focus:outline-none transition-transform duration-300">
+    ☰
+  </button>
+
+  <div class="ml-4 hidden md:block">
+    <img src="logo.png" alt="Dollard Firm Logo" class="h-14 w-auto">
+  </div>
+</header>
+
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="md:hidden overflow-hidden max-h-0 transition-all duration-500 ease-in-out bg-black border-b border-[#E6C47B]">
+  <div class="px-6 py-4 space-y-4">
+    <a href="index.html" class="block text-[#E6C47B] font-semibold">Home</a>
+    <a href="practice.html" class="block text-gray-100 hover:text-[#E6C47B]">Practice Areas</a>
+    <a href="why-us.html" class="block text-gray-100 hover:text-[#E6C47B]">Why Us</a>
+    <a href="about.html" class="block text-gray-100 hover:text-[#E6C47B]">About</a>
+    <a href="contact.html" class="block text-gray-100 hover:text-[#E6C47B]">Contact</a>
+  </div>
+</div>
+
 <!-- Hero -->
-<section class="py-20 px-8 lg:px-32 text-center bg-gradient-to-b from-black to-[#1a1a1a]">
+<section class="py-20 px-8 lg:px-32 text-center bg-gradient-to-b from-[#0a0a0a] to-[#1a1a1a]">
   <h1 class="text-5xl font-extrabold text-[#E6C47B] mb-6">Expungement & License Reinstatement</h1>
   <p class="max-w-3xl mx-auto text-lg text-gray-300 leading-relaxed">
     Mistakes shouldn’t define your future. The Dollard Firm helps clients across Indiana clear their criminal records and restore their driver’s licenses — providing the guidance you need to move forward with confidence.
   </p>
 </section>
 
-<!-- Divider -->
+<!-- Accent Divider -->
 <div class="border-t-2 border-[#E6C47B] w-24 mx-auto -mt-4 mb-12"></div>
 
 <!-- Main Content -->
-<section class="px-8 lg:px-32 py-16 grid gap-16 md:grid-cols-2 items-start">
-  <div class="space-y-6 border border-[#E6C47B] rounded-xl p-6 bg-[#0f0f0f]">
-    <h2 class="text-3xl font-bold text-[#E6C47B]">Indiana Expungement Law</h2>
-    <p class="text-gray-300 leading-relaxed">
-      Indiana’s “Second Chance Law” allows many people to seal or expunge old criminal convictions, arrests, or dismissed charges from their public record. This can make background checks, employment applications, and housing opportunities far easier.
+<section class="px-8 lg:px-32 grid md:grid-cols-2 gap-8">
+  <div class="bg-[#1a1a1a] border border-[#E6C47B] rounded-xl p-8 shadow-md hover:bg-[#262626] transition">
+    <h2 class="text-2xl font-bold text-[#E6C47B] mb-4">Indiana Expungement Law</h2>
+    <p class="text-gray-300 mb-4 leading-relaxed">
+      Indiana’s “Second Chance Law” allows many people to seal or expunge old criminal convictions, arrests, or dismissed charges. This improves background checks, employment applications, and housing opportunities.
     </p>
-    <p class="text-gray-300 leading-relaxed">
-      Our attorneys carefully assess your eligibility, prepare all necessary filings, and represent you throughout the expungement hearing process to ensure your record is cleared properly.
+    <p class="text-gray-300 mb-4 leading-relaxed">
+      Our attorneys assess eligibility, prepare filings, and represent clients throughout the hearing process.
     </p>
     <ul class="list-disc list-inside text-gray-300 space-y-2">
       <li>Expungement for misdemeanors and certain felonies</li>
@@ -58,12 +83,12 @@
     </ul>
   </div>
 
-  <div class="space-y-6 border border-[#E6C47B] rounded-xl p-6 bg-[#0f0f0f]">
-    <h2 class="text-3xl font-bold text-[#E6C47B]">License Reinstatement Assistance</h2>
-    <p class="text-gray-300 leading-relaxed">
-      A suspended or revoked license can disrupt your life and livelihood. The Dollard Firm assists with Indiana Bureau of Motor Vehicles (BMV) reinstatement, hardship licenses, and specialized driving privileges.
+  <div class="bg-[#1a1a1a] border border-[#E6C47B] rounded-xl p-8 shadow-md hover:bg-[#262626] transition">
+    <h2 class="text-2xl font-bold text-[#E6C47B] mb-4">License Reinstatement Assistance</h2>
+    <p class="text-gray-300 mb-4 leading-relaxed">
+      A suspended or revoked license can disrupt your life and livelihood. We assist with BMV reinstatement, hardship licenses, and specialized driving privileges.
     </p>
-    <ul class="list-disc list-inside text-gray-300 space-y-2">
+    <ul class="list-disc list-inside text-gray-300 space-y-2 mb-4">
       <li>Hardship and probationary driver’s licenses</li>
       <li>Reinstatement after DUI, OWI, or unpaid fines</li>
       <li>Representation in BMV administrative hearings</li>
@@ -71,69 +96,78 @@
       <li>Reinstatement petitions for CDL and commercial drivers</li>
     </ul>
     <p class="text-gray-300 leading-relaxed">
-      Whether your license was suspended due to an OWI, unpaid tickets, or other offenses, we’ll guide you through the steps to legally and efficiently regain your driving rights.
+      Whether your license was suspended due to an OWI, unpaid tickets, or other offenses, we guide you through the steps to regain your driving rights.
     </p>
   </div>
 </section>
 
 <!-- FAQ Accordion -->
-<section class="px-8 lg:px-32 py-12 bg-[#111111] rounded-xl mt-12 shadow-lg border border-[#E6C47B]">
-  <h2 class="text-3xl font-bold text-[#E6C47B] mb-8 text-center">Frequently Asked Questions</h2>
+<section class="px-8 lg:px-32 py-16 space-y-4">
+  <h3 class="text-3xl font-bold text-[#E6C47B] mb-8 text-center">Frequently Asked Questions</h3>
   <div class="space-y-4">
-    <details class="bg-[#0a0a0a] border border-[#E6C47B] rounded-lg p-4">
+    <details class="bg-[#1a1a1a] border border-[#E6C47B] rounded-xl p-4 hover:bg-[#262626] transition">
       <summary class="cursor-pointer text-lg font-semibold text-[#E6C47B]">Who qualifies for expungement in Indiana?</summary>
       <p class="mt-2 text-gray-300 leading-relaxed">
-        Eligibility depends on your conviction type, sentence completion, and how much time has passed. Most misdemeanors and lower-level felonies can be expunged after 5–8 years. We’ll review your record to determine exact eligibility.
+        Eligibility depends on conviction type, sentence completion, and time elapsed. Most misdemeanors and lower-level felonies can be expunged after 5–8 years.
       </p>
     </details>
-
-    <details class="bg-[#0a0a0a] border border-[#E6C47B] rounded-lg p-4">
+    <details class="bg-[#1a1a1a] border border-[#E6C47B] rounded-xl p-4 hover:bg-[#262626] transition">
       <summary class="cursor-pointer text-lg font-semibold text-[#E6C47B]">What does expungement actually do?</summary>
       <p class="mt-2 text-gray-300 leading-relaxed">
-        Expungement seals your criminal record from public view, meaning employers, landlords, and most background checks cannot access it. Law enforcement and courts retain limited access.
+        Expungement seals your criminal record from public view, preventing most employers, landlords, and background checks from accessing it.
       </p>
     </details>
-
-    <details class="bg-[#0a0a0a] border border-[#E6C47B] rounded-lg p-4">
+    <details class="bg-[#1a1a1a] border border-[#E6C47B] rounded-xl p-4 hover:bg-[#262626] transition">
       <summary class="cursor-pointer text-lg font-semibold text-[#E6C47B]">Can I get my license back after a DUI or OWI?</summary>
       <p class="mt-2 text-gray-300 leading-relaxed">
-        Yes — many drivers qualify for reinstatement or specialized driving privileges after completing suspensions or treatment programs. Our attorneys handle petitions and coordinate with the Indiana BMV for you.
+        Yes — many drivers qualify for reinstatement or specialized driving privileges after completing suspensions or treatment programs. We coordinate with the Indiana BMV on your behalf.
       </p>
     </details>
-
-    <details class="bg-[#0a0a0a] border border-[#E6C47B] rounded-lg p-4">
+    <details class="bg-[#1a1a1a] border border-[#E6C47B] rounded-xl p-4 hover:bg-[#262626] transition">
       <summary class="cursor-pointer text-lg font-semibold text-[#E6C47B]">How long does the expungement process take?</summary>
       <p class="mt-2 text-gray-300 leading-relaxed">
-        On average, expungement takes between 3–6 months from filing to approval, depending on the county and case type. Our firm ensures filings are accurate and complete to avoid unnecessary delays.
+        On average, expungement takes 3–6 months from filing to approval, depending on county and case type. We ensure filings are accurate to avoid unnecessary delays.
       </p>
     </details>
   </div>
 </section>
 
-<!-- CTA -->
-<section class="bg-[#E6C47B] text-[#0a0a0a] py-16 px-8 lg:px-32 text-center mt-20 shadow-lg rounded-xl">
-  <h2 class="text-3xl font-bold mb-4">Start Fresh — Clear Your Record Today</h2>
-  <p class="max-w-3xl mx-auto mb-8 text-lg">
-    Don’t let your past hold you back. The Dollard Firm is dedicated to helping Indiana residents restore their freedom and opportunity through expungement and license reinstatement.
-  </p>
-  <div class="flex justify-center gap-4 flex-wrap">
-    <a href="tel:3177707070" class="bg-[#0a0a0a] text-[#E6C47B] font-semibold px-10 py-4 rounded-lg shadow-md hover:bg-[#1a1a1a] transition">Call (317) 770-7070</a>
-    <a href="contact.html" class="border border-[#0a0a0a] px-10 py-4 rounded-lg font-semibold hover:bg-[#0a0a0a] hover:text-[#E6C47B] transition">Request Consultation</a>
+<!-- Contact CTA -->
+<section class="px-8 lg:px-32 py-16 bg-[#1a1a1a] border border-[#E6C47B] rounded-xl shadow-lg mt-16 flex flex-col md:flex-row items-center justify-between gap-6">
+  <div class="text-gray-300 max-w-xl text-center md:text-left">
+    <h3 class="text-2xl font-bold text-[#E6C47B] mb-4">Start Fresh — Clear Your Record Today</h3>
+    <p>Contact The Dollard Firm now for a free confidential consultation.</p>
+  </div>
+  <div class="flex gap-4 flex-wrap">
+    <a href="tel:3177707070" class="bg-[#E6C47B] text-[#0a0a0a] px-6 py-3 rounded-lg font-semibold hover:bg-[#f0d58c] transition shadow-md">Call Now</a>
+    <a href="contact.html" class="border border-[#E6C47B] px-6 py-3 rounded-lg font-semibold hover:bg-[#E6C47B] hover:text-[#0a0a0a] transition shadow-md">Request Consultation</a>
   </div>
 </section>
 
 <!-- Footer -->
-<footer class="bg-[#0a0a0a] text-gray-300 p-8 mt-16 border-t border-[#E6C47B]">
+<footer class="bg-[#0d0d0d] text-gray-300 p-8 mt-16 border-t border-[#E6C47B]">
   <p class="mb-4">&copy; 2025 The Dollard Firm | Noblesville, IN</p>
   <div class="flex justify-center gap-6">
-    <a href="https://www.facebook.com/people/The-Dollard-Firm/61573920722323/#" class="hover:text-[#E6C47B]">Facebook</a>
+    <a href="https://www.facebook.com/people/The-Dollard-Firm/61573920722323/#" class="hover:text-[#E6C47B]" target="_blank" rel="noopener noreferrer">Facebook</a>
     <a href="mailto:info@dollardfirm.com" class="hover:text-[#E6C47B]">Email</a>
     <a href="tel:3177707070" class="hover:text-[#E6C47B]">Phone</a>
   </div>
 </footer>
 
+<!-- Mobile Menu Script -->
+<script>
+const button = document.getElementById('mobile-menu-button');
+const menu = document.getElementById('mobile-menu');
+button.addEventListener('click', () => {
+  if (menu.style.maxHeight) {
+    menu.style.maxHeight = null;
+    button.textContent = "☰";
+  } else {
+    menu.style.maxHeight = menu.scrollHeight + "px";
+    button.textContent = "✕";
+  }
+});
+</script>
+
 </body>
 </html>
-
-
-

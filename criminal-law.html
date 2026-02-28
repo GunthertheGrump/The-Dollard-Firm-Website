@@ -1,25 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Criminal Law | The Dollard Firm</title>
-  <meta name="description" content="Experienced criminal law attorneys in Noblesville, Indiana. The Dollard Firm defends clients against felony and misdemeanor charges, protecting your rights and freedom.">
-  <meta name="keywords" content="Criminal law, criminal defense, felony defense, misdemeanor defense, Noblesville attorney, Indiana criminal lawyer">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    body {
-      font-family: 'Baskerville', serif;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Criminal Law | Dollard Firm  </title>
+<meta name="description" content="The Dollard Firm provides expert criminal defense in Noblesville, Indiana. Available 24/7 for free confidential consultations.">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="icon" href="logo.png" type="image/png">
+<link rel="apple-touch-icon" sizes="180x180" href="logo.png">
 </head>
-<body class="bg-[#0a0a0a] text-gray-100">
+
+<body class="bg-[#0a0a0a] text-gray-100" style="font-family: 'Baskerville', serif;">
 
 <!-- Header -->
 <header class="flex justify-between items-center p-6 border-b border-[#E6C47B] shadow-lg sticky top-0 z-50 bg-black">
-  <div class="flex items-center gap-3">
-    <img src="logo-gold.png" alt="The Dollard Firm Gold Logo" class="h-14 w-auto">
-  </div>
+  <a href="index.html" class="flex items-center">
+    <img src="logo-gold.png" alt="The Dollard Firm Logo" class="h-12 w-auto">
+  </a>
   <nav class="hidden md:flex gap-6 text-gray-100 font-medium tracking-wide">
     <a href="index.html" class="hover:text-[#E6C47B] transition-colors">Home</a>
     <a href="practice.html" class="hover:text-[#E6C47B] transition-colors">Practice Areas</a>
@@ -30,10 +27,32 @@
   <div class="ml-4">
     <img src="logo.png" alt="The Dollard Firm Logo" class="h-14 w-auto">
   </div>
+  <button id="mobile-menu-button" class="md:hidden text-[#E6C47B] text-3xl focus:outline-none transition-transform duration-300" aria-label="Toggle navigation menu">☰</button>
 </header>
 
+  <!-- Mobile Menu Button -->
+  <button id="mobile-menu-button" class="md:hidden text-[#E6C47B] text-3xl focus:outline-none transition-transform duration-300">
+    ☰
+  </button>
+
+  <div class="ml-4 hidden md:block">
+    <img src="logo.png" alt="Dollard Firm Logo" class="h-14 w-auto">
+  </div>
+</header>
+
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="md:hidden overflow-hidden max-h-0 transition-all duration-500 ease-in-out bg-black border-b border-[#E6C47B]">
+  <div class="px-6 py-4 space-y-4">
+    <a href="index.html" class="block text-[#E6C47B] font-semibold">Home</a>
+    <a href="practice.html" class="block text-gray-100 hover:text-[#E6C47B]">Practice Areas</a>
+    <a href="why-us.html" class="block text-gray-100 hover:text-[#E6C47B]">Why Us</a>
+    <a href="about.html" class="block text-gray-100 hover:text-[#E6C47B]">About</a>
+    <a href="contact.html" class="block text-gray-100 hover:text-[#E6C47B]">Contact</a>
+  </div>
+</div>
+
 <!-- Hero -->
-<section class="py-20 px-8 lg:px-32 bg-gradient-to-b from-black to-[#1a1a1a] text-center">
+<section class="py-20 px-8 lg:px-32 bg-gradient-to-b from-[#0a0a0a] to-[#1a1a1a] text-center">
   <h1 class="text-5xl font-extrabold text-[#E6C47B] mb-6">Criminal Law</h1>
   <p class="max-w-3xl mx-auto text-lg text-gray-300 leading-relaxed">
     The Dollard Firm provides aggressive and strategic criminal defense across Noblesville and Indiana. Our experienced attorneys handle both felony and misdemeanor cases to protect your rights, freedom, and future.
@@ -43,12 +62,12 @@
 <!-- Accent Divider -->
 <div class="border-t-2 border-[#E6C47B] w-24 mx-auto -mt-4 mb-12"></div>
 
-<!-- Main Content -->
-<section class="px-8 lg:px-32 py-16 grid gap-16 md:grid-cols-2 items-start">
-  <div class="space-y-6 border border-[#E6C47B] rounded-xl p-6 bg-[#0f0f0f]">
-    <h2 class="text-3xl font-bold text-[#E6C47B]">Comprehensive Criminal Defense</h2>
-    <p class="text-gray-300 leading-relaxed">
-      Our criminal law practice covers a wide range of offenses, from minor misdemeanors to serious felonies. We focus on protecting your rights during every stage of the criminal justice process, including arrests, investigations, and court proceedings.
+<!-- Strengths / Main Content -->
+<section class="px-8 lg:px-32 grid md:grid-cols-2 gap-8">
+  <div class="bg-[#1a1a1a] border border-[#E6C47B] rounded-xl p-8 shadow-md hover:bg-[#262626] transition">
+    <h3 class="text-2xl font-bold text-[#E6C47B] mb-4">Comprehensive Defense</h3>
+    <p class="text-gray-300 mb-4">
+      Our practice covers a wide range of offenses, from minor misdemeanors to serious felonies. We protect your rights at every stage of the criminal justice process.
     </p>
     <ul class="list-disc list-inside text-gray-300 space-y-2">
       <li>Felony and misdemeanor defense</li>
@@ -59,62 +78,83 @@
     </ul>
   </div>
 
-  <div class="space-y-6 border border-[#E6C47B] rounded-xl p-6 bg-[#0f0f0f]">
-    <h2 class="text-3xl font-bold text-[#E6C47B]">Why Choose The Dollard Firm</h2>
-    <p class="text-gray-300 leading-relaxed">
-      With over 25 years of courtroom experience, The Dollard Firm provides knowledgeable, dedicated, and aggressive representation. We understand Indiana criminal law, local courts, and prosecutors, allowing us to achieve favorable outcomes for our clients.
+  <div class="bg-[#1a1a1a] border border-[#E6C47B] rounded-xl p-8 shadow-md hover:bg-[#262626] transition">
+    <h3 class="text-2xl font-bold text-[#E6C47B] mb-4">Why Choose Us</h3>
+    <p class="text-gray-300">
+      With over 25 years of courtroom experience, The Dollard Firm provides knowledgeable, dedicated, and aggressive representation. We understand Indiana law, local courts, and prosecutors, achieving favorable outcomes for clients.
     </p>
   </div>
 </section>
 
 <!-- FAQ Accordion -->
-<section class="px-8 lg:px-32 py-12 bg-[#111111] rounded-xl mt-12 shadow-lg border border-[#E6C47B]">
-  <h2 class="text-3xl font-bold text-[#E6C47B] mb-8 text-center">Frequently Asked Questions</h2>
+<section class="px-8 lg:px-32 py-16 space-y-4">
+  <h3 class="text-3xl font-bold text-[#E6C47B] mb-8 text-center">Frequently Asked Questions</h3>
   <div class="space-y-4">
-    <details class="bg-[#0a0a0a] border border-[#E6C47B] rounded-lg p-4">
+    <details class="bg-[#1a1a1a] border border-[#E6C47B] rounded-xl p-4 hover:bg-[#262626] transition">
       <summary class="cursor-pointer text-lg font-semibold text-[#E6C47B]">What is the difference between a felony and a misdemeanor?</summary>
       <p class="mt-2 text-gray-300 leading-relaxed">
-        Felonies are more serious crimes that carry higher penalties, including long-term imprisonment, whereas misdemeanors typically involve shorter jail time and smaller fines. Our attorneys handle both types of charges.
+        Felonies are more serious crimes with higher penalties, including long-term imprisonment. Misdemeanors involve shorter jail time and smaller fines.
       </p>
     </details>
 
-    <details class="bg-[#0a0a0a] border border-[#E6C47B] rounded-lg p-4">
+    <details class="bg-[#1a1a1a] border border-[#E6C47B] rounded-xl p-4 hover:bg-[#262626] transition">
       <summary class="cursor-pointer text-lg font-semibold text-[#E6C47B]">Can a criminal record be expunged?</summary>
       <p class="mt-2 text-gray-300 leading-relaxed">
-        Certain criminal records may be eligible for expungement under Indiana law. We guide clients through the process to clear or seal their records when possible, improving employment and housing opportunities.
+        Certain criminal records may be eligible for expungement under Indiana law. We guide clients through the process to clear or seal records when possible.
       </p>
     </details>
 
-    <details class="bg-[#0a0a0a] border border-[#E6C47B] rounded-lg p-4">
+    <details class="bg-[#1a1a1a] border border-[#E6C47B] rounded-xl p-4 hover:bg-[#262626] transition">
       <summary class="cursor-pointer text-lg font-semibold text-[#E6C47B]">How do I choose the right criminal defense attorney?</summary>
       <p class="mt-2 text-gray-300 leading-relaxed">
-        Look for experience, courtroom presence, and a history of successful outcomes. The Dollard Firm has over 25 years of experience defending clients across Indiana, providing personalized legal strategies for each case.
+        Look for experience, courtroom presence, and a history of successful outcomes. The Dollard Firm provides personalized strategies for each case.
       </p>
     </details>
   </div>
 </section>
 
-<!-- CTA -->
-<section class="bg-[#E6C47B] text-[#0a0a0a] py-16 px-8 lg:px-32 text-center mt-20 shadow-lg rounded-xl">
-  <h2 class="text-3xl font-bold mb-4">Schedule Your Criminal Law Consultation Today</h2>
-  <p class="max-w-3xl mx-auto mb-8 text-lg">
-    Don’t wait to protect your rights. Call The Dollard Firm now or request a consultation online. Our attorneys are available 24/7 to provide aggressive and experienced criminal defense in Noblesville and throughout Indiana.
-  </p>
-  <div class="flex justify-center gap-4 flex-wrap">
-    <a href="tel:3177707070" class="bg-[#0a0a0a] text-[#E6C47B] font-semibold px-10 py-4 rounded-lg shadow-md hover:bg-[#1a1a1a] transition">Call (317) 770-7070</a>
-    <a href="contact.html" class="border border-[#0a0a0a] px-10 py-4 rounded-lg font-semibold hover:bg-[#0a0a0a] hover:text-[#E6C47B] transition">Request Consultation</a>
+<!-- Contact CTA -->
+<section class="px-6 md:px-8 lg:px-32 py-16 bg-[#1a1a1a] border border-[#E6C47B] rounded-xl shadow-lg mt-16 flex flex-col md:flex-row items-center justify-between gap-6">
+  <div class="text-gray-300 max-w-xl text-center md:text-left">
+    <h3 class="text-2xl font-bold text-[#E6C47B] mb-4">Ready to Protect Your Rights?</h3>
+    <p>Contact The Dollard Firm today for a free confidential consultation.</p>
+  </div>
+  <div class="flex gap-4">
+    <a href="tel:3177707070" class="bg-[#E6C47B] text-[#0a0a0a] px-6 py-3 rounded-lg font-semibold hover:bg-[#f0d58c] transition shadow-md">
+      Call Now
+    </a>
+    <a href="contact.html" class="border border-[#E6C47B] px-6 py-3 rounded-lg font-semibold hover:bg-[#E6C47B] hover:text-[#0a0a0a] transition shadow-md">
+      Request Consultation
+    </a>
   </div>
 </section>
 
+
+
 <!-- Footer -->
-<footer class="bg-[#0a0a0a] text-gray-300 p-8 mt-16 border-t border-[#E6C47B]">
+<footer class="bg-[#0d0d0d] text-gray-300 p-8 mt-16 border-t border-[#E6C47B]">
   <p class="mb-4">&copy; 2025 The Dollard Firm | Noblesville, IN</p>
   <div class="flex justify-center gap-6">
-    <a href="https://www.facebook.com/people/The-Dollard-Firm/61573920722323/#" class="hover:text-[#E6C47B]">Facebook</a>
+    <a href="https://www.facebook.com/people/The-Dollard-Firm/61573920722323/#" class="hover:text-[#E6C47B]" target="_blank" rel="noopener noreferrer">Facebook</a>
     <a href="mailto:info@dollardfirm.com" class="hover:text-[#E6C47B]">Email</a>
     <a href="tel:3177707070" class="hover:text-[#E6C47B]">Phone</a>
   </div>
 </footer>
+
+<!-- Mobile Menu Script -->
+<script>
+  const button = document.getElementById('mobile-menu-button');
+  const menu = document.getElementById('mobile-menu');
+  button.addEventListener('click', () => {
+    if (menu.style.maxHeight) {
+      menu.style.maxHeight = null;
+      button.textContent = "☰";
+    } else {
+      menu.style.maxHeight = menu.scrollHeight + "px";
+      button.textContent = "✕";
+    }
+  });
+</script>
 
 </body>
 </html>

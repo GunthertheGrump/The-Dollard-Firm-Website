@@ -1,23 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Practice Areas | The Dollard Firm</title>
-  <meta name="description" content="Explore the criminal and civil defense practice areas of The Dollard Firm in Noblesville, IN. Experienced legal representation you can trust.">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    .accordion-content { display: none; }
-  </style>
-  <script>
-    function toggleAccordion(id) {
-      const content = document.getElementById(id);
-      content.classList.toggle('hidden');
-    }
-  </script>
-  <link rel="icon" href="logo.png" type="image/png">
-  <link rel="apple-touch-icon" sizes="180x180" href="logo.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Practice Areas | The Dollard Firm</title>
+<meta name="description" content="Explore the criminal and civil defense practice areas of The Dollard Firm in Noblesville, IN. Experienced legal representation you can trust.">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="icon" href="logo.png" type="image/png">
+<link rel="apple-touch-icon" sizes="180x180" href="logo.png">
+<style>
+  .accordion-content { display: none; }
+</style>
 </head>
+
 <body class="bg-[#0a0a0a] text-gray-100" style="font-family: 'Baskerville', serif;">
 
 <!-- Header -->
@@ -25,22 +20,41 @@
   <a href="index.html" class="flex items-center">
     <img src="logo-gold.png" alt="The Dollard Firm Logo" class="h-12 w-auto">
   </a>
+
+  <!-- Desktop Nav -->
   <nav class="hidden md:flex gap-6 text-gray-100 font-medium tracking-wide">
-    <a href="index.html" class="hover:text-[#E6C47B] transition-colors">Home</a>
-    <a href="practice.html" class="text-[#E6C47B] font-semibold">Practice Areas</a>
+    <a href="index.html" class="text-[#E6C47B] font-semibold">Home</a>
+    <a href="practice.html" class="hover:text-[#E6C47B] transition-colors">Practice Areas</a>
     <a href="why-us.html" class="hover:text-[#E6C47B] transition-colors">Why Us</a>
     <a href="about.html" class="hover:text-[#E6C47B] transition-colors">About</a>
     <a href="contact.html" class="hover:text-[#E6C47B] transition-colors">Contact</a>
   </nav>
-  <div class="ml-4">
+
+  <!-- Mobile Menu Button -->
+  <button id="mobile-menu-button" class="md:hidden text-[#E6C47B] text-3xl focus:outline-none transition-transform duration-300">
+    ☰
+  </button>
+
+  <div class="ml-4 hidden md:block">
     <img src="logo.png" alt="Dollard Firm Logo" class="h-14 w-auto">
   </div>
 </header>
 
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="md:hidden overflow-hidden max-h-0 transition-all duration-500 ease-in-out bg-black border-b border-[#E6C47B]">
+  <div class="px-6 py-4 space-y-4">
+    <a href="index.html" class="block text-[#E6C47B] font-semibold">Home</a>
+    <a href="practice.html" class="block text-gray-100 hover:text-[#E6C47B]">Practice Areas</a>
+    <a href="why-us.html" class="block text-gray-100 hover:text-[#E6C47B]">Why Us</a>
+    <a href="about.html" class="block text-gray-100 hover:text-[#E6C47B]">About</a>
+    <a href="contact.html" class="block text-gray-100 hover:text-[#E6C47B]">Contact</a>
+  </div>
+</div>
+
 <!-- Hero Section -->
-<section class="py-20 px-8 lg:px-32 bg-gradient-to-b from-[#0a0a0a] to-[#1a1a1a] text-center">
-  <h2 class="text-5xl font-extrabold text-[#E6C47B] mb-6">Practice Areas</h2>
-  <p class="text-lg text-gray-300 max-w-3xl mx-auto">
+<section class="relative py-28 px-6 md:px-8 lg:px-32 bg-gradient-to-b from-[#0a0a0a] to-[#1a1a1a] text-center">
+  <h2 class="text-4xl lg:text-5xl font-extrabold text-[#E6C47B] mb-6">Practice Areas</h2>
+  <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
     The Dollard Firm proudly serves clients throughout Indiana in criminal defense, civil litigation, family, and estate law. 
     Select a category below to learn more about each area of practice and how our firm can help protect your rights.
   </p>
@@ -50,7 +64,7 @@
 <div class="border-t-2 border-[#E6C47B] w-24 mx-auto -mt-4 mb-12"></div>
 
 <!-- Accordion Section -->
-<section class="px-8 lg:px-32 space-y-6">
+<section class="px-6 md:px-8 lg:px-32 space-y-6">
 
   <!-- Criminal Law -->
   <div class="bg-[#111111] rounded-xl border border-[#E6C47B] shadow-lg overflow-hidden">
@@ -97,25 +111,25 @@
       Civil Law
     </button>
     <div id="civilContent" class="accordion-content hidden bg-[#0a0a0a] p-6 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <a href="civil-law.html" class="block bg-[#111111] border border-[#E6C47B] rounded-xl p-6 hover:bg-[#1f1f1f] transition">
+      <a href="civil-law.html" class="block bg-[#111111] border border-[#E6C47B] rounded-xl p-6 shadow-md hover:bg-[#1f1f1f] transition">
         <h3 class="text-xl font-semibold text-[#E6C47B] mb-2">Civil Law</h3>
       </a>
-      <a href="small-claims.html" class="block bg-[#111111] border border-[#E6C47B] rounded-xl p-6 hover:bg-[#1f1f1f] transition">
+      <a href="small-claims.html" class="block bg-[#111111] border border-[#E6C47B] rounded-xl p-6 shadow-md hover:bg-[#1f1f1f] transition">
         <h3 class="text-xl font-semibold text-[#E6C47B] mb-2">Small Claims</h3>
       </a>
-      <a href="property-dispute.html" class="block bg-[#111111] border border-[#E6C47B] rounded-xl p-6 hover:bg-[#1f1f1f] transition">
+      <a href="property-dispute.html" class="block bg-[#111111] border border-[#E6C47B] rounded-xl p-6 shadow-md hover:bg-[#1f1f1f] transition">
         <h3 class="text-xl font-semibold text-[#E6C47B] mb-2">Property Dispute</h3>
       </a>
-      <a href="contract-disputes.html" class="block bg-[#111111] border border-[#E6C47B] rounded-xl p-6 hover:bg-[#1f1f1f] transition">
+      <a href="contract-disputes.html" class="block bg-[#111111] border border-[#E6C47B] rounded-xl p-6 shadow-md hover:bg-[#1f1f1f] transition">
         <h3 class="text-xl font-semibold text-[#E6C47B] mb-2">Contract Disputes</h3>
       </a>
-      <a href="false-arrest.html" class="block bg-[#111111] border border-[#E6C47B] rounded-xl p-6 hover:bg-[#1f1f1f] transition">
+      <a href="false-arrest.html" class="block bg-[#111111] border border-[#E6C47B] rounded-xl p-6 shadow-md hover:bg-[#1f1f1f] transition">
         <h3 class="text-xl font-semibold text-[#E6C47B] mb-2">False Arrest</h3>
       </a>
-      <a href="malicious-prosecution.html" class="block bg-[#111111] border border-[#E6C47B] rounded-xl p-6 hover:bg-[#1f1f1f] transition">
+      <a href="malicious-prosecution.html" class="block bg-[#111111] border border-[#E6C47B] rounded-xl p-6 shadow-md hover:bg-[#1f1f1f] transition">
         <h3 class="text-xl font-semibold text-[#E6C47B] mb-2">Malicious Prosecution</h3>
       </a>
-      <a href="personal-injury.html" class="block bg-[#111111] border border-[#E6C47B] rounded-xl p-6 hover:bg-[#1f1f1f] transition">
+      <a href="personal-injury.html" class="block bg-[#111111] border border-[#E6C47B] rounded-xl p-6 shadow-md hover:bg-[#1f1f1f] transition">
         <h3 class="text-xl font-semibold text-[#E6C47B] mb-2">Personal Injury</h3>
       </a>
     </div>
@@ -127,53 +141,82 @@
       Estate Law
     </button>
     <div id="estateContent" class="accordion-content hidden bg-[#0a0a0a] p-6 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <a href="wills.html" class="block bg-[#111111] border border-[#E6C47B] rounded-xl p-6 hover:bg-[#1f1f1f] transition">
+      <a href="wills.html" class="block bg-[#111111] border border-[#E6C47B] rounded-xl p-6 shadow-md hover:bg-[#1f1f1f] transition">
         <h3 class="text-xl font-semibold text-[#E6C47B] mb-2">Wills</h3>
       </a>
-	<a href="estates.html" class="block bg-[#111111] border border-[#E6C47B] rounded-xl p-6 hover:bg-[#1f1f1f] transition">
+      <a href="estates.html" class="block bg-[#111111] border border-[#E6C47B] rounded-xl p-6 shadow-md hover:bg-[#1f1f1f] transition">
         <h3 class="text-xl font-semibold text-[#E6C47B] mb-2">Estates</h3>
       </a>
-	<a href="trusts.html" class="block bg-[#111111] border border-[#E6C47B] rounded-xl p-6 hover:bg-[#1f1f1f] transition">
+      <a href="trusts.html" class="block bg-[#111111] border border-[#E6C47B] rounded-xl p-6 shadow-md hover:bg-[#1f1f1f] transition">
         <h3 class="text-xl font-semibold text-[#E6C47B] mb-2">Trusts</h3>
       </a>
-      <a href="power-of-attorney.html" class="block bg-[#111111] border border-[#E6C47B] rounded-xl p-6 hover:bg-[#1f1f1f] transition">
+      <a href="power-of-attorney.html" class="block bg-[#111111] border border-[#E6C47B] rounded-xl p-6 shadow-md hover:bg-[#1f1f1f] transition">
         <h3 class="text-xl font-semibold text-[#E6C47B] mb-2">Power of Attorney Law</h3>
       </a>
     </div>
   </div>
 
-<!-- Family Law -->
-<div class="bg-[#111111] rounded-xl border border-[#E6C47B] shadow-lg overflow-hidden">
+  <!-- Family Law -->
+  <div class="bg-[#111111] rounded-xl border border-[#E6C47B] shadow-lg overflow-hidden">
     <button onclick="toggleAccordion('familyContent')" class="w-full text-left px-6 py-4 font-bold text-[#E6C47B] text-xl focus:outline-none hover:bg-[#1f1f1f] transition">
       Family Law
     </button>
     <div id="familyContent" class="accordion-content hidden bg-[#0a0a0a] p-6 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <a href="family-law.html" class="block bg-[#111111] border border-[#E6C47B] rounded-xl p-6 hover:bg-[#1f1f1f] transition">
+      <a href="family-law.html" class="block bg-[#111111] border border-[#E6C47B] rounded-xl p-6 shadow-md hover:bg-[#1f1f1f] transition">
         <h3 class="text-xl font-semibold text-[#E6C47B] mb-2">Family Law</h3>
       </a>
     </div>
   </div>
 
-
-
 </section>
 
-<!-- CTA Banner -->
-<section class="bg-[#E6C47B] text-[#0a0a0a] py-12 px-8 lg:px-32 text-center mt-12 shadow-lg">
-  <h3 class="text-2xl font-bold mb-4">Charged with a Crime or Need Legal Assistance?</h3>
-  <p class="max-w-2xl mx-auto mb-6">Contact The Dollard Firm today to schedule a confidential consultation and get experienced guidance in any legal matter.</p>
-  <a href="contact.html" class="bg-[#0a0a0a] text-[#E6C47B] font-semibold px-8 py-3 rounded-lg shadow-md hover:bg-[#1a1a1a] transition">Schedule a Consultation</a>
+<!-- Contact CTA -->
+<section class="px-6 md:px-8 lg:px-32 py-16 bg-[#1a1a1a] border border-[#E6C47B] rounded-xl shadow-lg mt-16 flex flex-col md:flex-row items-center justify-between gap-6">
+  <div class="text-gray-300 max-w-xl text-center md:text-left">
+    <h3 class="text-2xl font-bold text-[#E6C47B] mb-4">Ready to Protect Your Rights?</h3>
+    <p>Contact The Dollard Firm today for a free confidential consultation.</p>
+  </div>
+  <div class="flex gap-4">
+    <a href="tel:3177707070" class="bg-[#E6C47B] text-[#0a0a0a] px-6 py-3 rounded-lg font-semibold hover:bg-[#f0d58c] transition shadow-md">
+      Call Now
+    </a>
+    <a href="contact.html" class="border border-[#E6C47B] px-6 py-3 rounded-lg font-semibold hover:bg-[#E6C47B] hover:text-[#0a0a0a] transition shadow-md">
+      Request Consultation
+    </a>
+  </div>
 </section>
 
 <!-- Footer -->
-<footer class="bg-[#0a0a0a] text-gray-300 p-8 mt-16 border-t border-[#E6C47B]">
+<footer class="bg-[#0d0d0d] text-gray-300 p-8 mt-16 border-t border-[#E6C47B]">
   <p class="mb-4">&copy; 2025 The Dollard Firm | Noblesville, IN</p>
   <div class="flex justify-center gap-6">
-    <a href="https://www.facebook.com/people/The-Dollard-Firm/61573920722323/#" class="hover:text-[#E6C47B]">Facebook</a>
+    <a href="https://www.facebook.com/people/The-Dollard-Firm/61573920722323/#" class="hover:text-[#E6C47B]" target="_blank" rel="noopener noreferrer">Facebook</a>
     <a href="mailto:info@dollardfirm.com" class="hover:text-[#E6C47B]">Email</a>
     <a href="tel:3177707070" class="hover:text-[#E6C47B]">Phone</a>
   </div>
 </footer>
+
+<!-- Scripts -->
+<script>
+  // Mobile Menu Toggle
+  const button = document.getElementById('mobile-menu-button');
+  const menu = document.getElementById('mobile-menu');
+  button.addEventListener('click', () => {
+    if (menu.style.maxHeight) {
+      menu.style.maxHeight = null;
+      button.textContent = "☰";
+    } else {
+      menu.style.maxHeight = menu.scrollHeight + "px";
+      button.textContent = "✕";
+    }
+  });
+
+  // Accordion Toggle
+  function toggleAccordion(id) {
+    const content = document.getElementById(id);
+    content.classList.toggle('hidden');
+  }
+</script>
 
 </body>
 </html>
