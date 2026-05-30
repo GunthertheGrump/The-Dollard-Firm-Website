@@ -58,7 +58,7 @@
 
   <!-- Contact Section -->
   <section class="grid gap-12 md:grid-cols-2 items-start pb-16">
-    <!-- Contact Info + Building Photo -->
+    <!-- Contact Info -->
     <div class="flex flex-col gap-8">
       <div class="border border-[#E6C47B] rounded-xl bg-[#0f0f0f] p-8 shadow-lg">
         <h3 class="text-2xl font-bold text-[#E6C47B] mb-6">Get in Touch</h3>
@@ -75,38 +75,17 @@
       </div>
     </div>
 
-   <!-- Updated Contact Form -->
-<div class="bg-[#0f0f0f] rounded-xl p-8 shadow-lg border border-[#E6C47B]">
-  <h3 class="text-2xl font-bold text-[#E6C47B] mb-6">Send Us a Message</h3>
-  <form id="emailForm" class="space-y-6">
-    <input type="text" id="name" placeholder="Full Name*" required class="w-full px-4 py-3 rounded-lg bg-[#0d0d0d] text-gray-100 border border-[#E6C47B] focus:ring-2 focus:ring-[#E6C47B] focus:outline-none">
-    <input type="email" id="email" placeholder="Email*" required class="w-full px-4 py-3 rounded-lg bg-[#0d0d0d] text-gray-100 border border-[#E6C47B] focus:ring-2 focus:ring-[#E6C47B] focus:outline-none">
-    <textarea id="message" rows="5" placeholder="Message*" required class="w-full px-4 py-3 rounded-lg bg-[#0d0d0d] text-gray-100 border border-[#E6C47B] focus:ring-2 focus:ring-[#E6C47B] focus:outline-none"></textarea>
-    <button type="button" onclick="sendEmail()" class="bg-[#E6C47B] text-[#0a0a0a] px-6 py-3 rounded-lg font-semibold hover:bg-[#f5d28a] transition shadow-md w-full">Send Message</button>
-  </form>
-</div>
-
-<script>
-  function sendEmail() {
-    // Get values from the form
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
-
-    // Check if fields are filled
-    if (!name || !email || !message) {
-      alert("Please fill in all fields.");
-      return;
-    }
-
-    // Prepare the mailto link
-    const subject = encodeURIComponent("New Inquiry from " + name);
-    const body = encodeURIComponent("Name: " + name + "\nEmail: " + email + "\n\nMessage:\n" + message);
-    
-    // Open user's email client
-    window.location.href = `mailto:info@dollardfirm.com?subject=${subject}&body=${body}`;
-  }
-</script>
+    <!-- Contact Form -->
+    <div class="space-y-8">
+      <div class="bg-[#0f0f0f] rounded-xl p-8 shadow-lg border border-[#E6C47B]">
+        <h3 class="text-2xl font-bold text-[#E6C47B] mb-6">Send Us a Message</h3>
+        <form id="emailForm" class="space-y-6">
+          <input type="text" id="name" placeholder="Full Name*" required class="w-full px-4 py-3 rounded-lg bg-[#0d0d0d] text-gray-100 border border-[#E6C47B] focus:ring-2 focus:ring-[#E6C47B] focus:outline-none">
+          <input type="email" id="email" placeholder="Email*" required class="w-full px-4 py-3 rounded-lg bg-[#0d0d0d] text-gray-100 border border-[#E6C47B] focus:ring-2 focus:ring-[#E6C47B] focus:outline-none">
+          <textarea id="message" rows="5" placeholder="Message*" required class="w-full px-4 py-3 rounded-lg bg-[#0d0d0d] text-gray-100 border border-[#E6C47B] focus:ring-2 focus:ring-[#E6C47B] focus:outline-none"></textarea>
+          <button type="button" onclick="sendEmail()" class="bg-[#E6C47B] text-[#0a0a0a] px-6 py-3 rounded-lg font-semibold hover:bg-[#f5d28a] transition shadow-md w-full">Send Message</button>
+        </form>
+      </div>
 
       <div class="rounded-xl shadow-lg overflow-hidden h-[400px] border border-[#E6C47B]">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3054.29245362802!2d-86.02915220000001!3d40.046574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8814b0cd5c804611%3A0x65af7e87aa27bf50!2sThe%20Dollard%20Firm%20LLC!5e0!3m2!1sen!2sus!4v1757626777190!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -126,6 +105,7 @@
 </footer>
 
 <script>
+  // Mobile Menu Toggle
   const button = document.getElementById('mobile-menu-button');
   const menu = document.getElementById('mobile-menu');
   button.addEventListener('click', () => {
@@ -137,6 +117,23 @@
       button.textContent = "✕";
     }
   });
+
+  // Email Preparation Script
+  function sendEmail() {
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    if (!name || !email || !message) {
+      alert("Please fill in all fields before sending.");
+      return;
+    }
+
+    const subject = encodeURIComponent("New Inquiry from " + name);
+    const body = encodeURIComponent("Name: " + name + "\nEmail: " + email + "\n\nMessage:\n" + message);
+    
+    window.location.href = `mailto:info@dollardfirm.com?subject=${subject}&body=${body}`;
+  }
 </script>
 </body>
 </html>
